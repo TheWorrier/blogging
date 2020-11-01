@@ -2,9 +2,12 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 # Create your views here.
 from django.shortcuts import redirect
-
+from forms import Person
 def signup(request):
+# generic view
+# 
     if request.method=="POST":
+        form==Person(request.POST)
         # Get the post parameters
         username=request.POST['username']
         email=request.POST['email']

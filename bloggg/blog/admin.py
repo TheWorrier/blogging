@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import Person, Post, BlogComment
+from .models import Person, Post
 # Register your models here.
 
 admin.site.register(Person)
-admin.site.register((Post, BlogComment))
+admin.site.register(Post)
+# admin.site.register((Like, Person, Post))
+# admin.site.register((Post, BlogComment))
