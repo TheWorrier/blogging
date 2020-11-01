@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+</head>  
+<body>  
+      <form action= "/" method='post'>
+        <!-- <div class="form-group">
+          <label for="fname12">First name:</label>
+          <input type="text" class="form-control" id="fname12" name="fname12" placeholder="Choose a unique username">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Your First Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address: </label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Last Name">
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" id="state" name="state" placeholder="State">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city" name="city" placeholder="City">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="contact">contact:</label>
+          <input type="text" class="form-control" id="contact" name="contact" placeholder="contact">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="postalcode">postalcode:</label>
+          <input type="text" class="form-control" id="postalcode" name="postalcode" placeholder="postalcode">
+        </div>
+        <div class="form-group">
+          <label for="pass1">Choose a password</label>
+          <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Choose Your Password">
+        </div>
+        <div class="form-group">
+          <label for="pass2">Confirm Password</label>
+          <input type="password" class="form-control" id="pass2" name="pass2" placeholder="Enter your password again">
+        </div>
+       -->
+
+        {% csrf_token %}
+         {{ form.as_p }}  
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+</body>  
+</html>  
